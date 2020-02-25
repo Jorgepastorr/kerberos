@@ -1,0 +1,32 @@
+version: "2"
+services:
+  ldap:
+    image: jorgepastorr/ldapserver19:latest
+    container_name: ldapserver.edt.org
+    hostname: ldapserver.edt.org
+    ports: 
+      - "389:389"
+    networks:
+      - mynet
+  kerberos:
+    image: jorgepastorr/k19:kserver
+    container_name: kserver.edt.org
+    hostname: kserver.edt.org
+    privileged: true
+    ports:
+      - "88:88"
+      - "464:464"
+      - "749:749"
+    networks:
+      - mynet
+  sshd:
+    image: jorgepastorr/k19:sshdpl
+    container_name: sshd.edt.org
+    hostname: sshd.edt.org
+    privileged: true
+    ports:
+      - "1022:22"
+    networks:
+      - mynet
+networks:
+  mynet:

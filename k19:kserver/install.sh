@@ -12,11 +12,16 @@ kdb5_util create -s -P masterkey
 
 # crear usuarios
 kadmin.local -q "addprinc -pw admin admin"
-for num in {01..06}
+for num in {01..08}
 do
     # usuarios solo
     kadmin.local -q "addprinc -pw kuser$num kuser$num"
     # usuarios ldap
-    kadmin.local -q "addprinc -pw user$num user$num"
+    kadmin.local -q "addprinc -pw kuser$num user$num"
 done
 
+users="jordi marta anna pere pau"
+for user in $users
+do
+    kadmin.local -q "addprinc -pw k$user $user"
+done
