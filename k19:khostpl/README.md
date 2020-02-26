@@ -5,7 +5,7 @@ Los usuarios ldap-kerberos son `pere, jordi, anna, ..., user01..06 ` y pueden co
 
 
 ```bash
-docker run --rm --name ldapserver.edt.org -h ldapserver.edt.org --net mynet -d jorgepastorr/ldapserver:19group
+docker run --rm --name ldapserver.edt.org -h ldapserver.edt.org --net mynet -d jorgepastorr/ldapserver19
 docker run --rm --name kserver.edt.org -h kserver.edt.org --net mynet -d jorgepastorr/k19:kserver
 docker run --rm --name khost.edt.org -h khost.edt.org --net mynet -it jorgepastorr/k19:khostpl
 ```

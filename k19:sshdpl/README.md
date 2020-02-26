@@ -11,7 +11,7 @@ Ejemplo:
 ```
 
 ```bash
-docker run --rm --name ldapserver.edt.org -h ldapserver.edt.org --net mynet -d jorgepastorr/ldapserver:19group
+docker run --rm --name ldapserver.edt.org -h ldapserver.edt.org --net mynet -d jorgepastorr/ldapserver19
 docker run --rm --name kserver.edt.org -h kserver.edt.org --net mynet -d jorgepastorr/k19:kserver
 docker run --rm --name sshd.edt.org -h sshd.edt.org --net mynet -d jorgepastorr/k19:khostpl
 ```
