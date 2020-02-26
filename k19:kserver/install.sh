@@ -14,7 +14,7 @@ kdb5_util create -s -P masterkey
 kadmin.local -q "addprinc -pw admin admin"
 for num in {01..08}
 do
-    # usuarios solo
+    # usuarios solo kerberos
     kadmin.local -q "addprinc -pw kuser$num kuser$num"
     # usuarios ldap
     kadmin.local -q "addprinc -pw kuser$num user$num"

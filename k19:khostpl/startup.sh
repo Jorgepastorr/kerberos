@@ -6,4 +6,3 @@ bash /opt/docker/install.sh
 /sbin/nslcd 
 
 /bin/bash
-

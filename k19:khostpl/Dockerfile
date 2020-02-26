@@ -2,7 +2,7 @@ FROM fedora:27
 
 LABEL version="0.1"
 LABEL autor="@jorgepastorr"
-LABEL subject="k19:sshdpl"
+LABEL subject="k19:hostpl"
 
 RUN dnf install -y passwd nss-pam-ldapd authconfig \
                 pam_krb5 krb5-workstation

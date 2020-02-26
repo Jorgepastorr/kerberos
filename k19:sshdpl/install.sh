@@ -15,7 +15,6 @@ cp /opt/docker/sshd_config /etc/ssh/
 # configuracion ldap, kerberos
 authconfig --enableshadow --enablelocauthorize \
    --enableldap \
-   --enableldapauth \
    --ldapserver='ldapserver.edt.org' \
    --ldapbase='dc=edt,dc=org' \
    --enablekrb5 --krb5kdc='kserver.edt.org' \
