@@ -26,3 +26,6 @@ cp /opt/docker/krb5.conf /etc/krb5.conf
 
 # cp /opt/docker/system-auth /etc/pam.d/system-auth
 # cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
+
+echo -e "admin\naddprinc -randkey host/sshd.edt.org\nktadd host/sshd.edt.org\nquit\n" | /usr/bin/kadmin -p admin
+
