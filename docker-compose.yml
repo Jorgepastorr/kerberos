@@ -2,8 +2,8 @@ version: "2"
 services:
   ldap:
     image: jorgepastorr/ldapserver19:latest
-    container_name: ldapserver.edt.org
-    hostname: ldapserver.edt.org
+    container_name: ldap.edt.org
+    hostname: ldap.edt.org
     ports: 
       - "389:389"
     networks:

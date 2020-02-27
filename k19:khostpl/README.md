@@ -2,7 +2,7 @@ Se tiene que añadir manualmente en el archivo `/etc/hosts` la ip y dominio de l
 
 Ejemplo:
 ```bash
-3.91.49.124 kserver.edt.org ldapserver.edt.org
+3.91.49.124 kserver.edt.org ldap.edt.org
 ```
 
 ```bash
