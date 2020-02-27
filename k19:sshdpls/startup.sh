@@ -4,5 +4,4 @@ bash /opt/docker/install.sh
 
 /sbin/nscd
 /sbin/nslcd 
-
-/bin/bash
+/sbin/sshd -D
