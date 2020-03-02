@@ -1,3 +1,0 @@
-# sshdpls
-
-por acer

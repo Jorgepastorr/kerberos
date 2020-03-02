@@ -2,6 +2,4 @@
 
 bash /opt/docker/install.sh
 
-/sbin/nscd
-/sbin/nslcd 
-/sbin/sshd -D
+/usr/bin/httpd -DFOREGROUND
