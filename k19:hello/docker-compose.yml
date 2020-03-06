@@ -24,7 +24,8 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock"
     deploy:
       placement:
-        constraints: [node.role == manager]
+	#constraints: [node.role == manager]
+        constraints: [node.labels.lloc == local]
     networks:
       - mynet
 networks:
