@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp /opt/docker/index.html /var/www/index.html
+echo "Hola mon dia a tothom soc: $HOSTNAME" > /var/www/html/index.html

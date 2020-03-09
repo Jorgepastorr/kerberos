@@ -2,4 +2,4 @@
 
 bash /opt/docker/install.sh
 
-/usr/bin/httpd -DFOREGROUND
+/usr/sbin/httpd -DFOREGROUND
