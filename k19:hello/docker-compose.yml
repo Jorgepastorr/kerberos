@@ -3,19 +3,19 @@ services:
   hello:
     image: edtasixm11/k19:hello
     deploy:
-      replicas: 3
+      replicas: 5
     ports:
       - "80:80"
     networks:
       - mynet
-  portainer:
-    image: portainer/portainer
-    ports:
-      - "9000:9000"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    networks:
-      - mynet
+  # portainer:
+  #   image: portainer/portainer
+  #   ports:
+  #     - "9000:9000"
+  #   volumes:
+  #     - "/var/run/docker.sock:/var/run/docker.sock"
+  #   networks:
+  #     - mynet
   visualizer:
     image: dockersamples/visualizer:stable
     ports:
@@ -24,8 +24,8 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock"
     deploy:
       placement:
-	#constraints: [node.role == manager]
-        constraints: [node.labels.lloc == local]
+	      constraints: [node.role == manager]
+        # constraints: [node.labels.lloc == local]
     networks:
       - mynet
 networks:
